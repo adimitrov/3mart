@@ -35,10 +35,10 @@ end
 
 get '/bulletin/?:number?' do
   if params[:number].to_i == 1
-    @file = "http://bgof.org/upload/Buletin1_3Mart2014.pdf"
+    @file = "http://bgof.org/upload/Naredba_kupa_3Mart2014.pdf"
   else
     # 2
-    @file = "http://bgof.org/upload/Buletin1_3Mart2014_test.pdf"
+    @file = "http://bgof.org/upload/Buletin1_3Mart2014.pdf"
   end
   erb :bulletin
 end
