@@ -17,6 +17,14 @@ get '/results' do
   erb :results
 end
 
+get '/splits' do
+  erb :splits
+end
+
+get '/team_results' do
+  erb :team_results
+end
+
 get '/start_list' do
   erb :start_list
 end

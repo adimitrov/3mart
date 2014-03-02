@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-md-4 col-md-offset-1">
+    <a class="btn btn-lg <%= request.path_info == '/results' ? 'btn-default' : 'btn-success'  %>" href="/results">Results</a>
+  </div>
+  <div class="col-md-4">
+    <a class="btn btn-lg <%= request.path_info == '/splits' ? 'btn-default' : 'btn-success'  %>" href="/splits">Split Times</a>
+  </div>
+  <div class="col-md-3">
+
+    <a class="btn btn-lg <%= request.path_info == '/team_results' ? 'btn-default' : 'btn-success'  %>" href="/team_results">Team results</a>
+  </div>
+</div>
