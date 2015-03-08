@@ -1,7 +1,7 @@
 require 'sinatra'
 
 get '/' do
-  @event_date = DateTime.new(2014,3,2,10,0,0,'+2')
+  @event_date = DateTime.new(2015,3,15,10,0,0,'+2')
   @current_date = DateTime.now
   # Testing
   #@current_date = DateTime.new(2014,3,2,11,0,0,'+2')
@@ -43,10 +43,10 @@ end
 
 get '/bulletin/?:number?' do
   if params[:number].to_i == 1
-    @file = "http://bgof.org/upload/Naredba_kupa_3Mart2014.pdf"
+    @file = "http://bgorienteering.com/Naredba3Mart2015.pdf"
   else
     # 2
-    @file = "http://bgof.org/upload/Buletin1_3Mart2014.pdf"
+    @file = "http://bgorienteering.com/Bulletin1_3Mart2015.pdf"
   end
   erb :bulletin
 end
