@@ -29,6 +29,10 @@ get '/start_list' do
   erb :start_list
 end
 
+get '/gps_list' do
+  erb :gps_list
+end
+
 get '/video' do
   erb :video
 end
